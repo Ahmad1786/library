@@ -52,7 +52,46 @@ body {
     border-radius: 10px; /* Added border-radius for rounded corners */
 }
 
-
 .book-card p {
     margin-bottom: 10px; /* Added margin to the bottom of each paragraph inside the card */
+}
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.form-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    color: white;
+    background-color: #4CAF50;
+    padding: 5px 5px;
+    margin-top: 5px;
+    margin-left: 75px;
 }

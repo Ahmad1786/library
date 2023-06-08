@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>library</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="file.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navbar">
-        <h1>My Library</h1>
+      <h1>My Library</h1>
     </div>
-    
+
     <div class="content">
-        <button class="add-book-btn">Add Book</button>
+      <button class="add-book-btn">Add Book</button>
     </div>
 
     <div class="book-container">
-        <!-- Example book card -->
-<!--         <div class="book-card">
-            <p>Title: Book 1</p>
-            <p>Author: Author 1</p>
-            <p>Pages: 200</p>
-            <p>Read: Yes</p>
-        </div> -->
-
     </div>
-</body>
+    <div class="popup">
+        <!-- The Card -->
+        <div class="form-card">
+          <form>
+            <!-- Title -->
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" />
+
+            <!-- Author -->
+            <label for="author">Author:</label>
+            <input type="text" name="author" id="author" />
+
+            <!-- Pages -->
+            <label for="pages">Pages:</label>
+            <input type="number" name="pages" id="pages" />
+
+            <!-- Read? -->
+            <label for="read">Read the Book?</label>
+            <select name="read" id="read">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <!-- Submit Button -->
+            <br />
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+  </body>
 </html>
